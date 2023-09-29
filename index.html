@@ -45,8 +45,8 @@
               class="aligned-text-end_letters">до</span></span></span>
       </h1>
       <div class="cover__text">
-        <p class="cover__text-p">
-          Аукцион вещей, в которые <span class="cover__text-p_span">никто не </span>верил
+        <p class="cover__text-paragraph">
+          Аукцион вещей, в которые <span class="cover__text-paragraph_span">никто не </span>верил
         </p>
         <button class="cover__text-button">
           сделать ставку
@@ -55,17 +55,17 @@
     </section>
     <!-- блок с карточками -->
     <section class="lots">
-      <h3 class="lots__title">
+      <h2 class="lots__title">
         Лоты
-      </h3>
+      </h2>
       <ul class="lots__body-list">
         <!--карточка 1-->
         <li class="lots__body-card lots__body-card_card-one">
           <a class="body-card-a" href="#">
             <article class="card-article">
               <div class="overlay"></div>
-              <h4 class="lots__body-card-title">Фильм режиссёра, который <br>бросил киношколу</h4>
-              <p class="lots__body-card-p">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы
+              <h3 class="card-article__title">Фильм режиссёра, который бросил киношколу</h3>
+              <p class="card-article__p">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы
                 вы не знали, что режиссёр — Пол Томас Андерсон?</p>
             </article>
           </a>
@@ -75,8 +75,8 @@
           <a class="body-card-a" href="#">
             <article class="card-article">
               <div class="overlay"></div>
-              <h4 class="lots__body-card-title">Книга, где описан один<br>скучный день из жизни рекламного агента</h4>
-              <p class="lots__body-card-p">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами
+              <h3 class="card-article__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+              <p class="card-article__p">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами
                 на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы,
                 начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на
                 «Улисса» Джеймса Джойса?</p>
@@ -88,22 +88,22 @@
           <a class="body-card-a" href="#">
             <article class="card-article">
               <div class="overlay"></div>
-              <h4 class="lots__body-card-title">Картина, которую<br>повторит даже 5-летний сын маминой подруги</h4>
-              <p class="lots__body-card-p">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
+              <h3 class="card-article__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <p class="card-article__p">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
                 инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали,
                 что это — одна из революционных работ Кандинского?</p>
             </article>
           </a>
         </li>
       </ul>
-      <div class="lots__show-more">
-        <a class="show-more__a" href="#">посмотреть больше</a>
-      </div>
+      <!-- <div class="lots__show-more"> -->
+        <a class="lots__show-more" href="#">посмотреть больше</a>
+      <!-- </div> -->
     </section>
     <!-- об аукционе -->
     <section class="about">
       <div class="about__logo-background">
-        <img class="about-img" src="./images/logo-white.svg" alt="logo">
+        <img class="about__img" src="./images/logo-white.svg" alt="логотип">
       </div>
       <div class="about__info">
         <h2 class="about__info-title">
@@ -131,12 +131,14 @@
       <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
       <p>наб. Принсенграхт 263-265, <br> Амстердам</p>
     </address>
-    <ul class="footer__links-list">
-      <li class="footer__links-list-item"><a class="header__link_active" href="#">главная</a></li>
-      <li class="footer__links-list-item"><a href="#">посмотреть лоты</a></li>
-      <li class="footer__links-list-item"><a href="#">об аукционе</a></li>
-    </ul>
-    <div class="social">
+    <nav class="footer__menu">
+      <ul class="footer__menu-list">
+        <li class="menu-list__item"><a class="header__link_active" href="#">главная</a></li>
+        <li class="menu-list__item"><a href="#">посмотреть лоты</a></li>
+        <li class="menu-list__item"><a href="#">об аукционе</a></li>
+      </ul>
+    </nav>
+    <div class="footer__social">
       <a class="social-link" href="#"><img class="social__img" src="./images/yt.svg" alt="логотип youTube"></a>
       <a class="social-link" href="#"><img class="social__img" src="./images/vk.svg" alt="логотип VK"></a>
       <a class="social-link" href="#"><img class="social__img" src="./images/pinterest.svg" alt="логотип Pinterest"></a>
