@@ -1,6 +1,5 @@
-.adress-info_global {
+.adress-global {
   font-style: normal;
-  text-decoration: none;
   line-height: 135%;
 }
 
@@ -9,7 +8,7 @@
 .header {
   min-width: 1100px;
   width: 100%;
-  margin: 91px 0 91px 0;
+  margin: 91px 0 95px 0;
   font-size: 18px;
   font-family: Raleway, sans-serif;
   font-weight: 400;
@@ -41,8 +40,8 @@
 
 /* логотип */
 .header__logo-a {
-  display: block;
-  align-self: center;
+  display: flex;
+  justify-content: center;
   border-bottom: none;
 }
 
@@ -57,7 +56,7 @@
 }
 
 /* адрес */
-.adress-info {
+.header__adress {
   justify-self: end;
   align-self: center;
   padding-right: 2px;
@@ -99,22 +98,23 @@
 
 .aligned-text_letter {
   padding-left: 30px;
+  display: inline;
 }
 
-.aligned-text,
-.aligned-text-center,
-.aligned-text-end {
+.aligned-text_block,
+.aligned-text-center_block,
+.aligned-text-end_block {
   display: block;
 }
 
-.aligned-text {
+.aligned-text_block {
   margin-left: 50px;
   line-height: 115%;
   margin-bottom: 20px;
   letter-spacing: 29px;
 }
 
-.aligned-text-center {
+.aligned-text-center_block {
   text-align: center;
   line-height: 100%;
   margin-bottom: 21px;
@@ -125,12 +125,12 @@
   padding-right: 29px;
 }
 
-.aligned-text-center_lastLetter {
+.aligned-text-center_end {
   padding-right: 28px;
 }
 
-.aligned-text-end {
-  display: block;
+.aligned-text-end_block {
+  /* display: block; */
   text-align: end;
   line-height: 100%;
 }
@@ -243,15 +243,15 @@
   z-index: 2;
 }
 
-.lots__body-card_card-one {
+.lots__body-card_type_film {
   background-image: url("../images/card-lot-01.jpg");
 }
 
-.lots__body-card_card-two {
+.lots__body-card_type_book {
   background-image: url("../images/card-lot-02.jpg");
 }
 
-.lots__body-card_card-three {
+.lots__body-card_type_art {
   background-image: url("../images/card-lot-03.jpg");
 }
 
@@ -300,12 +300,12 @@
   margin: 100px 0px;
 }
 
-.about__info-text {
+.about__text {
   font-size: 20px;
   line-height: 115%;
 }
 
-.about__info-text_margin {
+.about__text_space_margin {
   margin-bottom: 29px;
 }
 
@@ -327,6 +327,12 @@
   line-height: normal;
 }
 
+.footer__menu-link_active {
+  text-decoration: none;
+  border-bottom: none;
+
+}
+
 .footer__social {
   display: flex;
   gap: 47px;
@@ -336,6 +342,6 @@
   border-bottom: none;
 }
 
-.social__img {
+.social-link__img {
   height: 48px;
 }
